@@ -4,7 +4,7 @@
 int main()
 {
     ElevatorFactory factory;
-    //Controller controller(&factory);
+    Controller controller(&factory);
 
     /*controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 1, 5));
     controller.sendPassengerDownRequests(new Request(RequestOrigin::OUTSIDE, 4, 2));
