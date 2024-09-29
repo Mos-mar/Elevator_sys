@@ -3,6 +3,7 @@
 #include "elevatorFactory.hpp"
 #include "passengerElevator.hpp"
 #include "serviceElevator.hpp"
+#include <map>
 
 class Controller
 {
@@ -36,7 +37,7 @@ public:
 
     void handlePassengerRequests()
     {
-        passengerElevator->operate();
+        passengerElevator->operate(std::map<State, std::string>& StateMap);
     }
 
     void handleServiceRequests()
