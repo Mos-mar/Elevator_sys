@@ -20,8 +20,8 @@ PassengerElevator(int currentFloor, bool emergencyStatus)
                              { return a->getDestinationFloor() < b->getDestinationFloor(); })
     {
     }
-void operate() override;
-void processEmergency() override;
+void operate(std::map<State, std::string>& StateMap) override;
+void processEmergency(std::map<DoorState, std::string>& DoorStateMap) override;
 void addDownRequest(Request *request);
 void addUpRequest(Request *request);
 void processUpRequests();

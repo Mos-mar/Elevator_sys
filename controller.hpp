@@ -41,13 +41,13 @@ public:
 
     void handleServiceRequests()
     {
-        serviceElevator->operate();
+        serviceElevator->operate(std::map<State, std::string>& StateMap);
     }
 
     void handleEmergency()
     {
-        passengerElevator->processEmergency();
-        serviceElevator->processEmergency();
+        passengerElevator->processEmergency(std::map<DoorState, std::string>& DoorStateMap);
+        serviceElevator->processEmergency(std::map<DoorState, std::string>& DoorStateMap);
     }
 };
 

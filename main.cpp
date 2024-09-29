@@ -1,12 +1,24 @@
 
 #include "controller.hpp"
+std::map<DoorState, std::string> DoorStateMap = {
+    {DoorState::OPEN, "OPEN"},
+    {DoorState::CLOSED, "CLOSED"}
+ };
+
+std::map<State, std::string> StateMap = {
+    {State::GOING_UP, "GOING_UP"},
+    {State::GOING_DOWN, "GOING_DOWN"},
+    {State::IDLE, "IDLE"}
+};
 
 int main()
 {
+
+    
     ElevatorFactory factory;
     Controller controller(&factory);
 
-    /*controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 1, 5));
+    controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 1, 5));
     controller.sendPassengerDownRequests(new Request(RequestOrigin::OUTSIDE, 4, 2));
     controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 3, 6));
     controller.handlePassengerRequests();
@@ -23,7 +35,7 @@ int main()
     controller.sendServiceRequest(new ServiceRequest(RequestOrigin::OUTSIDE, 13, 2));
     controller.sendServiceRequest(new ServiceRequest(RequestOrigin::INSIDE, 13, 15));
 
-    controller.handleServiceRequests();*/
+    controller.handleServiceRequests();
 
     return 0;
 }

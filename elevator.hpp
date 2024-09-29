@@ -26,9 +26,9 @@ public:
         std::cout << "Doors are CLOSED" << std::endl;
     }
 
-    virtual void operate() = 0; // Pure virtual function
+    virtual void operate(std::map<State, std::string>& StateMap) = 0; // Pure virtual function
 
-    virtual void processEmergency() = 0;
+    virtual void processEmergency(std::map<DoorState, std::string>& DoorStateMap) = 0;
 
     int getCurrentFloor() const
     {
@@ -62,4 +62,4 @@ public:
 
     virtual ~Elevator() {}
 };
-#endif // elevator_HPP
+#endif 

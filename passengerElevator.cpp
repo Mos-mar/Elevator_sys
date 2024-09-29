@@ -1,7 +1,7 @@
 #include "passengerElevator.hpp"
 #include "enums.hpp"
 
-void PassengerElevator::operate()
+void PassengerElevator::operate(std::map<State, std::string>& StateMap)
 {
     while (!passengerUpQueue.empty() || !passengerDownQueue.empty())
         {
@@ -11,7 +11,7 @@ void PassengerElevator::operate()
         std::cout << "All requests have been fulfilled, elevator is now " << StateMap[this->getState()] << std::endl;
 }
 
-void PassengerElevator::processEmergency()
+void PassengerElevator::processEmergency(std::map<DoorState, std::string>& DoorStateMap)
 {
         while (!passengerUpQueue.empty())
             passengerUpQueue.pop();

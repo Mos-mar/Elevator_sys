@@ -1,6 +1,7 @@
 #include "serviceElevator.hpp"
 #include "enums.hpp"
-void ServiceElevator::operate()
+
+void ServiceElevator::operate(std::map<State, std::string>& StateMap)
 {
     while (!serviceQueue.empty())
         {
@@ -37,7 +38,7 @@ void ServiceElevator::addRequestToQueue(ServiceRequest *request)
  serviceQueue.push_back(request);   
 }
 
-void ServiceElevator::processEmergency(){
+void ServiceElevator::processEmergency(std::map<DoorState, std::string>& DoorStateMap){
     serviceQueue.clear();
     this->setCurrentFloor(1);
     this->setState(State::IDLE);

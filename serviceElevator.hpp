@@ -12,9 +12,9 @@ public:
 ServiceElevator(int currentFloor, bool emergencyStatus)
         : Elevator(currentFloor, emergencyStatus) {}
 
-        void operate() override;
+        void operate(std::map<State, std::string>& StateMap) override;
         void addRequestToQueue(ServiceRequest *request);
-        void processEmergency() override;
+        void processEmergency(std::map<DoorState, std::string>& DoorStateMap) override;
     
     
         

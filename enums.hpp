@@ -13,12 +13,6 @@ enum class State
     IDLE
 };
 
- std::map<State, std::string> StateMap = {
-    {State::GOING_UP, "GOING_UP"},
-    {State::GOING_DOWN, "GOING_DOWN"},
-    {State::IDLE, "IDLE"}
-};
-
 enum class ElevatorType
 {
     PASSENGER,
@@ -36,11 +30,5 @@ enum class DoorState
     OPEN,
     CLOSED
 };
-
- std::map<DoorState, std::string> DoorStateMap = {
-    {DoorState::OPEN, "OPEN"},
-    {DoorState::CLOSED, "CLOSED"}
-};
-
 
 #endif // ENUMS_HPP
