@@ -1,4 +1,3 @@
-
 #include "controller.hpp"
 std::map<DoorState, std::string> DoorStateMap = {
     {DoorState::OPEN, "OPEN"},
