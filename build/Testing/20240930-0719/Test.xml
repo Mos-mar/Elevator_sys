@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Linux-clang++-16"
-	BuildStamp="20240929-1356-Experimental"
+	BuildStamp="20240930-0719-Experimental"
 	Name="DESKTOP-PCS7N89"
 	Generator="ctest-3.25.1"
 	CompilerName="/usr/bin/clang++-16"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="2592"
 	>
 	<Testing>
-		<StartDateTime>Sep 29 22:01 CEST</StartDateTime>
-		<StartTestTime>1727640087</StartTestTime>
+		<StartDateTime>Sep 30 09:19 CEST</StartDateTime>
+		<StartTestTime>1727680788</StartTestTime>
 		<TestList/>
-		<EndDateTime>Sep 29 22:01 CEST</EndDateTime>
-		<EndTestTime>1727640087</EndTestTime>
+		<EndDateTime>Sep 30 09:19 CEST</EndDateTime>
+		<EndTestTime>1727680788</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
