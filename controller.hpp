@@ -35,20 +35,20 @@ public:
         serviceElevator->addRequestToQueue(request);
     }
 
-    void handlePassengerRequests()
+    void handlePassengerRequests(std::map<State, std::string>& StateMap)
     {
-        passengerElevator->operate(std::map<State, std::string>& StateMap);
+        passengerElevator->operate(StateMap);
     }
 
-    void handleServiceRequests()
+    void handleServiceRequests(std::map<State, std::string>& StateMap)
     {
-        serviceElevator->operate(std::map<State, std::string>& StateMap);
+        serviceElevator->operate(StateMap);
     }
 
-    void handleEmergency()
+    void handleEmergency(std::map<DoorState, std::string>& DoorStateMap)
     {
-        passengerElevator->processEmergency(std::map<DoorState, std::string>& DoorStateMap);
-        serviceElevator->processEmergency(std::map<DoorState, std::string>& DoorStateMap);
+        passengerElevator->processEmergency(DoorStateMap);
+        serviceElevator->processEmergency(DoorStateMap);
     }
 };
 

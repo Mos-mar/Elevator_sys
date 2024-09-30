@@ -21,13 +21,13 @@ int main()
     controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 1, 5));
     controller.sendPassengerDownRequests(new Request(RequestOrigin::OUTSIDE, 4, 2));
     controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 3, 6));
-    controller.handlePassengerRequests();
+    controller.handlePassengerRequests(StateMap);
 
     controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 1, 9));
     controller.sendPassengerDownRequests(new Request(RequestOrigin::INSIDE, 5));
     controller.sendPassengerUpRequests(new Request(RequestOrigin::OUTSIDE, 4, 12));
     controller.sendPassengerDownRequests(new Request(RequestOrigin::OUTSIDE, 10, 2));
-    controller.handlePassengerRequests();
+    controller.handlePassengerRequests(StateMap);
 
     std::cout << "Now processing service requests" << std::endl;
 
@@ -35,7 +35,7 @@ int main()
     controller.sendServiceRequest(new ServiceRequest(RequestOrigin::OUTSIDE, 13, 2));
     controller.sendServiceRequest(new ServiceRequest(RequestOrigin::INSIDE, 13, 15));
 
-    controller.handleServiceRequests();
+    controller.handleServiceRequests(StateMap);
 
     return 0;
 }

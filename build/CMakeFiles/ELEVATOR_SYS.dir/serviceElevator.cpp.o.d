@@ -1,5 +1,4 @@
 CMakeFiles/ELEVATOR_SYS.dir/serviceElevator.cpp.o: \
-  /usr/lib/llvm-16/lib/clang/16/share/asan_ignorelist.txt \
   /home/mar/NeetCode/OOP/ElevatorSystem/serviceElevator.cpp \
   /home/mar/NeetCode/OOP/ElevatorSystem/serviceElevator.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/list \

@@ -1,1 +1,1 @@
-/usr/bin/clang++-16  -fsanitize=address -g CMakeFiles/ELEVATOR_SYS.dir/main.cpp.o CMakeFiles/ELEVATOR_SYS.dir/passengerElevator.cpp.o CMakeFiles/ELEVATOR_SYS.dir/serviceElevator.cpp.o -o ELEVATOR_SYS 
+/usr/bin/clang++-16 -g CMakeFiles/ELEVATOR_SYS.dir/main.cpp.o CMakeFiles/ELEVATOR_SYS.dir/passengerElevator.cpp.o CMakeFiles/ELEVATOR_SYS.dir/serviceElevator.cpp.o -o ELEVATOR_SYS 

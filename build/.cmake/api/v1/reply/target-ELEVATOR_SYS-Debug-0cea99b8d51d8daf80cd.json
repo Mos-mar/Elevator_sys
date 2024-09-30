@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -fsanitize=address -g"
+					"fragment" : "-g"
 				}
 			],
 			"language" : "CXX",
@@ -53,7 +53,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-fsanitize=address -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{

@@ -1,5 +1,4 @@
 CMakeFiles/ELEVATOR_SYS.dir/passengerElevator.cpp.o: \
-  /usr/lib/llvm-16/lib/clang/16/share/asan_ignorelist.txt \
   /home/mar/NeetCode/OOP/ElevatorSystem/passengerElevator.cpp \
   /home/mar/NeetCode/OOP/ElevatorSystem/passengerElevator.hpp \
   /home/mar/NeetCode/OOP/ElevatorSystem/elevator.hpp \
